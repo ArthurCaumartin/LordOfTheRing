@@ -1,9 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BallSound : MonoBehaviour
 {
     [SerializeField] private AudioSource _audioSource;
-    [SerializeField] private AudioClip _clip;
+    [SerializeField] private List<AudioClip> _clips = new List<AudioClip>();
     [SerializeField] private float _minVelocityToPlay = 1f;
 
     private Rigidbody2D _rigidbody2D;
@@ -17,7 +18,7 @@ public class BallSound : MonoBehaviour
     {
         if (_rigidbody2D.linearVelocity.magnitude > _minVelocityToPlay)
         {
-            _audioSource.PlayOneShot(_clip);
+            _audioSource.PlayOneShot(_clips[Random.Range(0, _clips.Count)]);
         }
     }
 }

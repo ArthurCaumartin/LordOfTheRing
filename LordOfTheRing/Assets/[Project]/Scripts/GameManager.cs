@@ -15,7 +15,11 @@ public class GameManager : MonoBehaviour
             if (value >= MaxLevel)
                 EndScene();
             else
+            {
+                if (value == 3)
+                    AudioManager.Instance.PlaySound(AudioManager.Instance.lvlUp);
                 level = value;
+            }
         }
     }
 
@@ -26,7 +30,6 @@ public class GameManager : MonoBehaviour
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
-            DontDestroyOnLoad(gameObject);
         }
         else
             Instance = this;
