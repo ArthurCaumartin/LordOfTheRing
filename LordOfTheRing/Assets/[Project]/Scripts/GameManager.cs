@@ -1,14 +1,25 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public string _gameScene = "GameScene";
-    public string _endScene = "EndScene";
-    public int MaxLevel = 5;
-    public int CurrentLevel = 0;
 
+    public int MaxLevel = 5;
+    public int CurrentLevel
+    {
+        get => level;
+        set
+        {
+            if (value >= MaxLevel)
+                EndScene();
+            else
+                level = value;
+        }
+    }
+
+    private int level;
 
     private void Awake()
     {
@@ -25,5 +36,10 @@ public class GameManager : MonoBehaviour
     {
         if (value.Get<float>() > 0)
             CurrentLevel++;
+    }
+
+    public void EndScene()
+    {
+        SceneManager.LoadScene("EndGame");
     }
 }
