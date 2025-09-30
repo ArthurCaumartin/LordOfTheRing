@@ -1,0 +1,34 @@
+{
+    "name": "Action",
+    "maps": [
+        {
+            "name": "Base",
+            "id": "125e3822-aa64-440f-969b-1ce03157d4e4",
+            "actions": [
+                {
+                    "name": "Charge",
+                    "type": "Value",
+                    "id": "e82941b2-f860-4a05-b762-b2ef402c6452",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ef935876-b2c0-41d6-82d9-6fb96e8d32aa",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Charge",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
