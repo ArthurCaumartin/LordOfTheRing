@@ -433,7 +433,7 @@ BoxCollider2D:
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1000, y: 1}
+  m_Size: {x: 740.28, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &1318402412
 GameObject:
@@ -987,6 +987,14 @@ PrefabInstance:
     - target: {fileID: 1723115799492502626, guid: 287e35ddd7cfcb44bb657eead0bd7aaf, type: 3}
       propertyPath: m_Name
       value: Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471336402989841730, guid: 287e35ddd7cfcb44bb657eead0bd7aaf, type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471336402989841730, guid: 287e35ddd7cfcb44bb657eead0bd7aaf, type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7412828931723480274, guid: 287e35ddd7cfcb44bb657eead0bd7aaf, type: 3}
       propertyPath: m_LocalPosition.x
