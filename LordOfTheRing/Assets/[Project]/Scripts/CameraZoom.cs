@@ -17,10 +17,14 @@ public class CameraZoom : MonoBehaviour
     [SerializeField] private List<ZoomLevel> _zoomLevelList = new List<ZoomLevel>();
     private float _currentZoom;
 
+    private void Start()
+    {
+        _currentZoom = _zoomLevelList[GameManager.Instance.CurrentLevel].Zoom;
+    }
 
     void Update()
     {
-        _currentZoom = Mathf.Lerp(_currentZoom, _zoomLevelList[GameManager.Instance.CurrentLevel].Zoom, Time.deltaTime * 5);
+        _currentZoom = Mathf.Lerp(_currentZoom, _zoomLevelList[GameManager.Instance.CurrentLevel].Zoom, Time.deltaTime);
         SetZoom(_currentZoom);
     }
 
@@ -35,4 +39,3 @@ public class CameraZoom : MonoBehaviour
         return _zoomLevelList[GameManager.Instance.CurrentLevel].forceMult;
     }
 }
-
