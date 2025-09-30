@@ -322,7 +322,7 @@ Transform:
   m_GameObject: {fileID: 786119771}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.78, z: 0}
   m_LocalScale: {x: 587.09, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -372,7 +372,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 6682738439518977790, guid: 8416a4dc024c55b4da0d5467e1af74c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -421,7 +421,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 50.31, y: 2.161758}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -773,6 +773,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 492019004811270611, guid: 287e35ddd7cfcb44bb657eead0bd7aaf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.35
+      objectReference: {fileID: 0}
     - target: {fileID: 1723115799492502626, guid: 287e35ddd7cfcb44bb657eead0bd7aaf, type: 3}
       propertyPath: m_Name
       value: Ball
@@ -781,9 +785,13 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 2150515711751611767, guid: 287e35ddd7cfcb44bb657eead0bd7aaf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6830682872900052290, guid: 9a7f5f5707cef8642a3f00dcb09596b8, type: 3}
     - target: {fileID: 7412828931723480274, guid: 287e35ddd7cfcb44bb657eead0bd7aaf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.5
+      value: -6.54
       objectReference: {fileID: 0}
     - target: {fileID: 7412828931723480274, guid: 287e35ddd7cfcb44bb657eead0bd7aaf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -899,6 +907,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 959237041171965512, guid: e465af9fa7d2b2e438c6bdc6d08b91a8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 959237041171965512, guid: e465af9fa7d2b2e438c6bdc6d08b91a8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.86
+      objectReference: {fileID: 0}
     - target: {fileID: 1007529729071127825, guid: e465af9fa7d2b2e438c6bdc6d08b91a8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.34
